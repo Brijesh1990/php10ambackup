@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            background-color: aquamarine;
+        }
+        form 
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+            font-size: 25px;
+        }
+        input[type="text"],input[type="password"],textarea
+        {
+            width: 250px;
+            height: auto;
+            padding: 8px;
+        }
+        input[type="submit"]
+        {
+            
+            width: 150px;
+            height: auto;
+            padding: 12px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            border: none;
+        }
+        input[type="reset"]
+        {
+            
+            width: 150px;
+            height: auto;
+            padding: 12px;
+            background-color: red;
+            color: white;
+            font-size: 18px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <h2 align="center">Register Form</h2>
+        <hr style="border:solid 2px black; width:50%">
+        <center> 
+        <label>Email *</label>
+        &nbsp; &nbsp; <input type="text" name="email" placeholder="Enter Email *" required>
+        <br><br>
+        <label>Pssword *</label>
+        <input type="password" name="password" placeholder="Enter Password *" required>
+        <br><br>
+
+        <label>Phone *</label>
+        &nbsp;&nbsp;
+        <input type="text" name="phone" placeholder="Enter Phone *" required>
+        <br><br>
+        
+        <label>Gender *</label>
+        &nbsp;&nbsp;
+        Male<input type="radio" name="gender" value="male" required>
+        
+        Female<input type="radio" name="gender" value="female" required>
+        <br><br>
+
+        <label>Address *</label>
+        &nbsp;&nbsp;
+        <textarea name="address" placeholder="Enter Address*" required></textarea>
+        <br><br>
+        
+        <input type="submit" name="sub" value="Register">
+        <input type="reset" name="reset" value="Reset">
+        
+        <br><br>
+        <b style="font-size: 12px">Already have an account ?<a href="form.html">Login Here</a></b>
+        </center>
+    </form>
+</body>
+</html>
